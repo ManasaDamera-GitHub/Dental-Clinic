@@ -1,4 +1,4 @@
-// src/components/Footer.jsx
+import "../styles/main.css";
 function Footer() {
   return (
     <footer className="footer">

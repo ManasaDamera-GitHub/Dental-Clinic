@@ -46,7 +46,9 @@ const Home = () => {
           <div className="service-card">Cavity Filling</div>
           <div className="service-card">Root Canal</div>
         </div>
-        <a className="view-more">View All Services</a>
+        <button className="cta-button">
+          <Link to={"/services"}>View All Services</Link>
+        </button>
       </section>
       <FAQ />
     </div>

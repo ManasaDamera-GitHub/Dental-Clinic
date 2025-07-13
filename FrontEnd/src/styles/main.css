@@ -549,7 +549,7 @@
 
 .about-container {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .about-intro,
@@ -742,7 +742,7 @@
 
 .contact-container {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .contact-title {
@@ -1013,6 +1013,7 @@
 @media (max-width: 480px) {
   .contact-section {
     padding: 3rem 1rem;
+    margin-top: 40px;
   }
   
   .contact-title {
@@ -1023,6 +1024,13 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 0.3rem;
+  }
+  .about-intro{
+    margin-top: 40px;
+  }
+  .services-container{
+    margin-top: 50px;
+    padding-top: 20px;
   }
 }
 
@@ -1058,7 +1066,7 @@
 
 .services-container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 20px auto;
   animation: fadeIn 0.8s ease-out;
 }
 
@@ -1349,7 +1357,7 @@
 
 .about-container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 /* Intro Section */
@@ -1630,5 +1638,101 @@
   
   .about-doctor {
     padding: 1.5rem;
+  }/* Add this to your existing CSS */
+@media (max-width: 480px) {
+  .services-grid {
+    max-width: 100%;
+    padding: 0 15px; /* Add some side padding */
+  }
+  
+  .service-card {
+    flex-direction: column; /* Stack image and content vertically */
+    width: 100%; /* Full width of container */
+    margin: 0 auto; /* Center the card */
+  }
+  
+  .service-img {
+    width: 100% !important; /* Full width of card */
+    height: 200px; /* Fixed height */
+  }
+  
+  .service-card-content {
+    padding: 1rem; /* Slightly reduced padding */
+  }
+  
+  .service-name {
+    font-size: 1.3rem;
+    margin-left: 0; /* Remove left margin on mobile */
+  }
+  
+  .service-desc {
+    font-size: 1rem;
+    margin-left: 0; /* Remove left margin on mobile */
+  }
+}
+
+/* For even smaller screens (optional) */
+@media (max-width: 360px) {
+  .service-card {
+    border-radius: 8px; /* Slightly smaller radius */
+  }
+  
+  .service-img {
+    height: 180px; /* Slightly reduced height */
+  }
+  
+  .service-name {
+    font-size: 1.2rem;
+  }
+}
+}
+/* src/components/Footer.css */
+
+/* Base Styles (Mobile-First) */
+.footer {
+  background-color: #f5f5f5;
+  padding: 1rem 0;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+  margin-top: auto; /* Pushes footer to bottom if needed */
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+  color: #666;
+  font-size: 0.8rem; /* Smaller text on mobile */
+  padding: 0 1rem; /* Prevents text from touching edges */
+}
+
+/* Tablet (768px and up) */
+@media (min-width: 768px) {
+  .footer {
+    padding: 1.25rem 0;
+  }
+
+  .footer p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+  .footer {
+    padding: 1.5rem 0;
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+    max-width: 1200px;
+    margin: 0 auto; /* Center text on wide screens */
+  }
+}
+
+/* Extra-Large Screens (1440px and up) */
+@media (min-width: 1440px) {
+  .footer p {
+    font-size: 1rem;
   }
 }

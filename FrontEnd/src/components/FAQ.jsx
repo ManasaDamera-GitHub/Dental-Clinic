@@ -12,7 +12,7 @@ const faqs = [
   {
     question: "How can I book an appointment?",
     answer:
-      "You can book an appointment through our website or by calling us directly at (555) 123-4567.",
+      "You can book an appointment through our website or by calling us directly at 9876543210.",
   },
   {
     question: "Do you accept insurance?",
