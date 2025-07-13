@@ -19,7 +19,10 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://jsonplaceholder.typicode.com/posts", formData);
+      await axios.post(
+        "https://dental-clinic-lbk2.onrender.com/data",
+        formData
+      );
       setSubmitted(true);
       setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
