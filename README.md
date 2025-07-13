@@ -27,7 +27,8 @@ Features:
 - Contact form data stored in MongoDB:
   - Fields: `name`, `email`, `subject`, `message`
 
-**Deployment Instructions**
+**Deployment Instructions**:/n
+
 **Frontend on Vercel:**
 1.Push the frontend code to a GitHub repository.
 2.Go to Vercel and click “New Project”.
