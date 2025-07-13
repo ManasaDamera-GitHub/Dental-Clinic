@@ -28,7 +28,7 @@ Features:
   - Fields: `name`, `email`, `subject`, `message`
 
 **Deployment Instructions**
-**🔹 Frontend on Vercel:**
+**Frontend on Vercel:**
 1.Push the frontend code to a GitHub repository.
 2.Go to Vercel and click “New Project”.
 3.Import the GitHub repo.
@@ -36,7 +36,7 @@ Features:
 5.Vercel auto-detects React and deploys it.
 6.After deployment, update Axios URLs in frontend to point to Render backend.
 
-**🔹 Backend on Render:**
+**Backend on Render:**
 1.Push your backend code to GitHub.
 2.Visit Render and click “New Web Service”.
 3.Connect your GitHub repo.
