@@ -1,7 +1,6 @@
-// src/components/FAQ.jsx
 import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import "../styles/main.css"; // Import the external CSS
+import "../styles/main.css"; 
 
 const faqs = [
   {

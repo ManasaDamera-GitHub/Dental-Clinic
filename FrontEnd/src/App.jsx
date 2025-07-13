@@ -3,7 +3,6 @@ import Header from "./components/Header";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import FAQ from "./components/FAQ";
 import About from "./pages/About";
 import Services from "./pages/Service";
 import Contact from "./pages/Contact";

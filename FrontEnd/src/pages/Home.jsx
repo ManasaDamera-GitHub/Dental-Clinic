@@ -1,4 +1,3 @@
-// src/pages/Home.jsx
 import FAQ from "../components/FAQ";
 import "../styles/main.css";
 import { Link } from "react-router-dom";
