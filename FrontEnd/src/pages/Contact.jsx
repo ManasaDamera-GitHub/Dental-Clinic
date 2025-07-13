@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 // import "./Contact.css";
+import "../styles/main.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -44,6 +45,7 @@ const Contact = () => {
               placeholder="Your Name"
               required
               onChange={handleChange}
+              style={{ color: "Black" }}
             />
             <input
               type="email"
@@ -52,6 +54,7 @@ const Contact = () => {
               placeholder="Your Email"
               required
               onChange={handleChange}
+              style={{ color: "Black" }}
             />
             <input
               type="text"
@@ -60,6 +63,7 @@ const Contact = () => {
               placeholder="Subject"
               required
               onChange={handleChange}
+              style={{ color: "Black" }}
             />
             <textarea
               name="message"
@@ -67,6 +71,7 @@ const Contact = () => {
               placeholder="Your Message"
               required
               onChange={handleChange}
+              style={{ color: "Black" }}
             ></textarea>
             <button type="submit">Send Message</button>
             {submitted && (
