@@ -7,6 +7,7 @@ const userRoutes = require("./Routes/Routes.js");
 const app = express();
 app.use(express.json());
 app.use("/", userRoutes);
+app.use("/", userRoutes);
 
 mongoose.connect(process.env.ATLAS_URI).then(() => {
   console.log("MongoDB connected successfully");
