@@ -6,7 +6,13 @@ dotenv.config();
 const userRoutes = require("./Routes/Routes.js");
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: "*",
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type"],
+  })
+);
 app.use(express.json());
 app.use("/", userRoutes);
 app.use("/", userRoutes);
